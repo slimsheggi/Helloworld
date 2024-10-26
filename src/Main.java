@@ -1,60 +1,92 @@
 public class Main {
     public static void main(String[] args) {
-        var dog = 0.8;
-        var cat = 3.6;
-        var paper = 763789;
-        System.out.println(dog);
-        System.out.println(cat);
-        System.out.println(paper);
+        // Task 1
 
-        dog = dog + 4;
-        cat = cat + 4;
-        paper = paper + 4;
-        System.out.println(dog);
-        System.out.println(cat);
-        System.out.println(paper);
+        int age = 17;
+        if (age >= 18) {
+            System.out.println("Если возраст человека равен " + age + ", то он совершеннолетний."); }
+        else  {
+            System.out.println("Если возраст человека равен " + age + ", то он не достиг совершеннолетия, нужно подождать.");
+        }
 
-        dog = dog - 3.5;
-        cat = cat - 1.6;
-        paper = paper - 7639;
-        System.out.println(dog);
-        System.out.println(cat);
-        System.out.println(paper);
+        // Task 2
 
-        var friend = 19;
-        System.out.println(friend);
-        friend = friend + 2;
-        System.out.println(friend);
-        friend = friend / 7;
-        System.out.println(friend);
+        int temperature = 6;
+        if (temperature < 5) {
+            System.out.println("На улице " + temperature + " градуса, нужно надеть шапку.");
+        }
+        else {
+            System.out.println("На улице " + temperature + " градусов, можно идти без шапки");
+        }
 
-        var frog = 3.5;
-        System.out.println(frog);
-        frog = frog * 10;
-        System.out.println(frog);
-        frog = frog / 3.5;
-        System.out.println(frog);
-        frog = frog + 4;
-        System.out.println(frog);
+        // Task 3
 
-        var boxerWeight1 = 78.2;
-        var boxerWeight2 = 82.7;
-        var totalWeight = boxerWeight1 + boxerWeight2;
-        System.out.println("Общий вес бойцов " + totalWeight + " кг!");
-        var weightDifference = boxerWeight2 - boxerWeight1;
-        System.out.println("Разница в весе бойцов " + weightDifference + " кг!");
+        int speed = 70;
+        if (speed > 60) {
+            System.out.println("Если скорость " + speed + ", то придется заплатить штраф.");
+        }
+        else {
+            System.out.println("Если скорость " + speed + ", то можно ездить спокойно.");
+        }
 
-        var remainder = boxerWeight2 % boxerWeight1;
-        System.out.println(remainder);
+        // Task 4
 
-        var hours = 640;
-        var openingHours = 8;
-        var workers = hours / openingHours;
-        System.out.println("Всего работников в компании " + workers + " человек");
+        int humanAge = 8;
+        if (humanAge >= 2 && humanAge <= 6) {
+            System.out.println("Если возраст человека равен " + humanAge + ", то ему нужно ходить в детский сад.");
+        }
+        if (humanAge >= 7 && humanAge <= 17) {
+            System.out.println("Если возраст человека равен " + humanAge + ", то ему нужно ходить в школу.");
+        }
+        if (humanAge >= 18 && humanAge <= 24) {
+            System.out.println("Если возраст человека равен " + humanAge + ", то его место в университете.");
+        }
+        if (humanAge > 24) {
+            System.out.println("Если возраст человека равен " + humanAge + ", то он должен ходить на работу");
+        }
 
-        workers = workers + 94;
-        System.out.println(workers);
-        var totalHours = hours / workers;
-        System.out.println("Если в компании работает " + workers + " человек, то всего " + totalHours + " часов работы может быть поделено между сотрудниками");
+        // Task 5
+
+        int childAge = 15;
+        if (childAge < 5) {
+            System.out.println("Если возраст ребёнка равен " + childAge + ", то ему нельзя кататься на атракционе.");
+        }
+        if (childAge >= 5 && childAge <= 14) {
+            System.out.println("Если возраст ребёнка равен " + childAge + ", то ему можно кататься на атракционе в сопровождении взрослых.");
+        }
+        if (childAge > 14) {
+            System.out.println("Если возрат ребёнка равен " + childAge + ", то ему можно кататься на атракционе без сопровождения взрослых.");
+        }
+
+        // Task 6
+
+        int people = 105;
+        int totalPlaces = 102;
+        int seating = 60;
+        int standing = totalPlaces - seating;
+        if (people < seating) {
+            System.out.println("Если пассажиров " + people + " человек, то есть седячие места.");
+        }
+        else if (people > seating && people <= totalPlaces) {
+            System.out.println("Если пассажиров " + people + " человек, то есть только стоячие места.");
+        }
+        else if (people > totalPlaces) {
+            System.out.println("Если пассажиров " + people + " человек, то мест в вагоне больше нет");
+        }
+
+        // Task 7
+
+        int one = 10;
+        int two = 20;
+        int three = 5;
+        if (one > two && one > three) {
+            System.out.println("Число " + one + " больше остальных");
+        }
+        else if (two > one && two > three) {
+            System.out.println("Число " + two + " больше остальных");
+        }
+        else if (three > one && three > two) {
+            System.out.println("Число " + three + " больше остальных");
+        }
     }
 }
