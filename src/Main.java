@@ -31,11 +31,11 @@ public class Main {
 
         // Task 4
 
-        int humanAge = 25;
-        if (humanAge == 2 || humanAge <= 6) {
+        int humanAge = 8;
+        if (humanAge >= 2 && humanAge <= 6) {
             System.out.println("Если возраст человека равен " + humanAge + ", то ему нужно ходить в детский сад.");
         }
-        if (humanAge == 7 || humanAge <= 17) {
+        if (humanAge >= 7 && humanAge <= 17) {
             System.out.println("Если возраст человека равен " + humanAge + ", то ему нужно ходить в школу.");
         }
         if (humanAge >= 18 && humanAge <= 24) {
